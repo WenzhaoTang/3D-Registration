@@ -122,13 +122,12 @@ To see pose estimation examples on the training images run
 ```shell
 $ python -m surfemb.scripts.infer_debug [model_path] --device [device]
 ```
+*[device]* could for example be *cuda:0* or *cpu*. 
 Here is an example of inference on a training image:
 <p align="center">
 <img src="/src/inf_insp.png" width="600" />
 </p>
 By performing inference inspection, we can visually observe how applying different textures results in varied correspondence accuracy.
-
-*[device]* could for example be *cuda:0* or *cpu*. 
 
 Add ```--real``` to use the test images with simulated crops based on the ground truth poses, or further
 add ```--detections``` to use the CosyPose detections.
