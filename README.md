@@ -44,7 +44,7 @@ The value of ```num``` can be selected from the following options: ```5```, ```1
 
 The following figure illustrates this concept:
 
-<img src="/src/5_10_20.png" width="800" />
+<img src="/src/5_10_20.png" width="600" />
 
 ```shell
 $ python -m surfemb.scripts.train [dataset] --gpus [gpu ids]
