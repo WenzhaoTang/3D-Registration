@@ -114,7 +114,7 @@ To see pose estimation examples on the training images run
 $ python -m surfemb.scripts.infer_debug [model_path] --device [device]
 ```
 Here is an example of inference on a training image:
-<img src="/src/5_epoch.png" width="400" />
+<img src="/src/inf_insp.png" width="400" />
 
 *[device]* could for example be *cuda:0* or *cpu*. 
 
