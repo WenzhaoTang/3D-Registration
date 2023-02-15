@@ -52,8 +52,9 @@ The value of ```num``` can be selected from the following options: ```5```, ```1
 | 5 epochs         | no convergence   | obvious                       |
 
 The following figure illustrates this concept:
-
+<p align="center">
 <img src="/src/5_10_20.png" width="600" />
+</p>
 
 ```shell
 $ python -m surfemb.scripts.train [dataset] --gpus [gpu ids]
@@ -122,6 +123,9 @@ To see pose estimation examples on the training images run
 $ python -m surfemb.scripts.infer_debug [model_path] --device [device]
 ```
 Here is an example of inference on a training image:
+<p align="center">
+<img src="/src/inf_insp.png" width="600" />
+</p>
 
 *[device]* could for example be *cuda:0* or *cpu*. 
 
