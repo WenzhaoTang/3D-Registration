@@ -19,12 +19,13 @@ $ pip install -r requirements.txt
 $ conda activate surfbase
 ```
 
-## Download Datasets
+## Prepare Datasets
 
 Our datasets can be downloaded through the following link in accordance with the BOP's format: [Niubility](https://bop.felk.cvut.cz/datasets/).
 
 Extract the datasets under ```data/bop``` (or make a symbolic link).
 
+The following images display the rendered objects with applied and selected patterns:
 <img src="/src/p1.png" width="250" /> <img src="/src/p2.png" width="250" /> <img src="/src/p3.png" width="250" />
 
 ## Training
@@ -112,6 +113,8 @@ To see pose estimation examples on the training images run
 ```shell
 $ python -m surfemb.scripts.infer_debug [model_path] --device [device]
 ```
+Here is an example of inference on a training image:
+<img src="/src/5_epoch.png" width="400" />
 
 *[device]* could for example be *cuda:0* or *cpu*. 
 
