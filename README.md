@@ -21,29 +21,17 @@ $ conda activate surfemb
 
 ## Download Datasets
 
-Download and extract datasets in the [BOP's format](https://bop.felk.cvut.cz/datasets/).
-*Base archive*, and *object models* are needed for both training and inference. For training, *PBR-BlenderProc4BOP
-training images* are needed as well, and for inference, the *BOP'19/20 test images* are needed.
+Our datasets can be downloaded through the following link in accordance with the BOP's format: [BOP's format](https://bop.felk.cvut.cz/datasets/).
 
 Extract the datasets under ```data/bop``` (or make a symbolic link).
 
-## Model
-
-Download a trained model (see *releases*):
-
-```shell
-$ wget https://github.com/rasmushaugaard/surfemb/releases/download/v0.0.1/tless-2rs64lwh.compact.ckpt -P data/models
-```
-
-**OR**
-
-Train a model:
-
+## Training
+To observe differences, train a model using varying numbers of epochs:
 ```shell
 $ python -m surfemb.scripts.train [dataset] --gpus [gpu ids]
 ```
 
-For example, to train a model on *T-LESS* on *cuda:0*
+For example, to train a model on *T-LESS-Nonetextured* on *cuda:0*
 
 ```shell
 $ python -m surfemb.scripts.train tless --gpus 0
