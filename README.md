@@ -21,8 +21,8 @@ $ conda activate surfbase
 
 ## Prepare Datasets
 <p align="center">
-<img src="/src/texture1.png" width="100" /> <img src="/src/texture2.png" width="100" />
-<img src="/src/texture3.png" width="100" /> <img src="/src/texture4.png" width="100" /> <img src="/src/texture5.png" width="100" /> 
+<img src="/src/texture1.png" alt="Texture 1" width="150" /> <img src="/src/texture2.png" alt="Texture 2" width="150" />
+<img src="/src/texture3.png" alt="Texture 3" width="150" /> <img src="/src/texture4.png" alt="Texture 4" width="150" /> <img src="/src/texture5.png" alt="Texture 15" width="150" /> 
 </p>
 Our datasets can be downloaded through the following link in accordance with the BOP's format: [Niubility](https://bop.felk.cvut.cz/datasets/).
 
