@@ -1,38 +1,27 @@
-# SurfEmb
+# Praktikum on 3D Vision - 3D Registration
 
-**SurfEmb: Dense and Continuous Correspondence Distributions  
-for Object Pose Estimation with Learnt Surface Embeddings**  
-Rasmus Laurvig Haugard, Anders Glent Buch  
-IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2022  
-[pre-print](https://arxiv.org/abs/2111.13489) |
-[project-site](https://surfemb.github.io/)
-
-The easiest way to explore correspondence distributions is through the [project site](https://surfemb.github.io/).
-
-The following describes how to reproduce the results.
 
 ## Install
 
 Download surfemb:
 
 ```shell
-$ git clone https://github.com/rasmushaugaard/surfemb.git
+$ git clone https://github.com/WenzhaoTang/3D-Registration.git
 $ cd surfemb
 ```
 
-All following commands are expected to be run in the project root directory.
-
 [Install conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
-, create a new environment, *surfemb*, and activate it:
+, create a new environment, *surfbase*, and activate it:
 
 ```shell
-$ conda env create -f environment.yml
+$ conda create --name surfbase python=3.8
+$ pip install -r requirements.txt
 $ conda activate surfemb
 ```
 
-## Download BOP data
+## Download Datasets
 
-Download and extract datasets from the [BOP site](https://bop.felk.cvut.cz/datasets/).
+Download and extract datasets in the [BOP's format](https://bop.felk.cvut.cz/datasets/).
 *Base archive*, and *object models* are needed for both training and inference. For training, *PBR-BlenderProc4BOP
 training images* are needed as well, and for inference, the *BOP'19/20 test images* are needed.
 
@@ -117,7 +106,7 @@ To see pose estimation examples on the training images run
 $ python -m surfemb.scripts.infer_debug [model_path] --device [device]
 ```
 
-*[device]* could for example be *cuda:0* or *cpu*.
+*[device]* could for example be *cuda:0* or *cpu*. 
 
 Add ```--real``` to use the test images with simulated crops based on the ground truth poses, or further
 add ```--detections``` to use the CosyPose detections.
