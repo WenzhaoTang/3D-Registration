@@ -126,6 +126,7 @@ Here is an example of inference on a training image:
 <p align="center">
 <img src="/src/inf_insp.png" width="600" />
 </p>
+By performing inference inspection, we can visually observe how applying different textures results in varied correspondence accuracy.
 
 *[device]* could for example be *cuda:0* or *cpu*. 
 
