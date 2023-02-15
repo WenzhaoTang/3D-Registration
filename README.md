@@ -20,6 +20,8 @@ $ conda activate surfbase
 ```
 
 ## Prepare Datasets
+<img src="/src/texture1.png" width="250" /> <img src="/src/texture2.png" width="250" />
+<img src="/src/texture3.png" width="250" /> <img src="/src/texture4.png" width="250" /> <img src="/src/texture5.png" width="250" /> 
 
 Our datasets can be downloaded through the following link in accordance with the BOP's format: [Niubility](https://bop.felk.cvut.cz/datasets/).
 
@@ -114,7 +116,6 @@ To see pose estimation examples on the training images run
 $ python -m surfemb.scripts.infer_debug [model_path] --device [device]
 ```
 Here is an example of inference on a training image:
-<img src="/src/inf_insp.png" width="400" />
 
 *[device]* could for example be *cuda:0* or *cpu*. 
 
