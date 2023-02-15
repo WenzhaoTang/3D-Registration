@@ -1,7 +1,7 @@
 # Praktikum on 3D Vision - 3D Registration
 
 
-## Install
+## Install requirements
 
 Download surfemb:
 
@@ -21,7 +21,7 @@ $ conda activate surfbase
 
 ## Download Datasets
 
-Our datasets can be downloaded through the following link in accordance with the BOP's format: [BOP's format](https://bop.felk.cvut.cz/datasets/).
+Our datasets can be downloaded through the following link in accordance with the BOP's format: [Niubility](https://bop.felk.cvut.cz/datasets/).
 
 Extract the datasets under ```data/bop``` (or make a symbolic link).
 
@@ -33,13 +33,18 @@ Configure the following settings in the training script:
 ```shell
 wandb.log({'epoch': num})
 ```
-```num``` can be chosen as 5, 10, 20.
+
+The value of ```num``` can be selected from the following options: ```5```, ```10```, or ```20```.
 
 | number of epochs | convergent speed | perceptibility of differences |
 |------------------|------------------|-------------------------------|
 | 20 epochs        | convergence      | imperceptible                 |
 | 10 epochs        | near convergence | barely noticeable             |
 | 5 epochs         | no convergence   | obvious                       |
+
+The following figure illustrates this concept:
+
+<img src="/src/5_10_20.png" width="800" />
 
 ```shell
 $ python -m surfemb.scripts.train [dataset] --gpus [gpu ids]
