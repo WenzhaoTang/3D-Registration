@@ -1,5 +1,9 @@
 # Praktikum on 3D Vision - 3D Registration
 
+## Project's overview
+Our project is focused on the task of finding point correspondences of rigid 3D objects to a canonical model. To achieve this goal, we conducted a thorough review of related work in the field and explored various possibilities. We experimented with template matching, but found its disadvantages when compared to deep learning methods. After careful consideration, we chose SurfEmb's architecture to perform our task.
+
+To enable dense correspondence, we applied artificial texture to our models. We created our own datasets consisting of five patterns and one non-textured model. We then used our method to perform inference on the new dataset to qualitatively show the improvement compared to other methods. Finally, we evaluated our results both quantitatively and qualitatively, to show the improvement in performance when we applied textures. Our work shows that deep learning methods like SurfEmb's architecture can significantly improve the accuracy of finding point correspondences in 3D objects, especially when used with artificial texture. 
 
 ## Install requirements
 
@@ -24,6 +28,7 @@ $ conda activate surfbase
 <img src="/src/texture1.png" alt="Texture 1" width="150" /> <img src="/src/texture2.png" alt="Texture 2" width="150" />
 <img src="/src/texture3.png" alt="Texture 3" width="150" /> <img src="/src/texture4.png" alt="Texture 4" width="150" /> <img src="/src/texture5.png" alt="Texture 15" width="150" /> 
 </p>
+
 Our datasets can be downloaded through the following link in accordance with the BOP's format: [Niubility](https://bop.felk.cvut.cz/datasets/).
 
 Extract the datasets under ```data/bop``` (or make a symbolic link).
