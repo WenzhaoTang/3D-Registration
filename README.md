@@ -16,7 +16,7 @@ $ cd surfemb
 ```shell
 $ conda create --name surfbase python=3.8
 $ pip install -r requirements.txt
-$ conda activate surfemb
+$ conda activate surfbase
 ```
 
 ## Download Datasets
@@ -25,8 +25,22 @@ Our datasets can be downloaded through the following link in accordance with the
 
 Extract the datasets under ```data/bop``` (or make a symbolic link).
 
+<img src="/src/p1.png" width="250" /> <img src="/src/p2.png" width="250" /> <img src="/src/p3.png" width="250" />
+
 ## Training
-To observe differences, train a model using varying numbers of epochs:
+To observe differences, train a model using varying numbers of epochs.
+Configure the following settings in the training script:
+```shell
+wandb.log({'epoch': num})
+```
+```num``` can be chosen as 5, 10, 20.
+
+| number of epochs | convergent speed | perceptibility of differences |
+|------------------|------------------|-------------------------------|
+| 20 epochs        | convergence      | imperceptible                 |
+| 10 epochs        | near convergence | barely noticeable             |
+| 5 epochs         | no convergence   | obvious                       |
+
 ```shell
 $ python -m surfemb.scripts.train [dataset] --gpus [gpu ids]
 ```
