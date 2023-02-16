@@ -3,7 +3,7 @@
 ## Project's overview
 Our project is focused on the task of finding point correspondences of rigid 3D objects to a canonical model. To achieve this goal, we conducted a thorough review of related work in the field and explored various possibilities. We experimented with template matching, but found its disadvantages when compared to deep learning methods. After careful consideration, we chose SurfEmb's architecture to perform our task.
 
-To enable dense correspondence, we applied artificial texture to our models. We created our own datasets consisting of five patterns and one non-textured model. We then used our method to perform inference on the new dataset to qualitatively show the improvement compared to other methods. Finally, we evaluated our results both quantitatively and qualitatively, to show the improvement in performance when we applied textures. Our work shows that deep learning methods like SurfEmb's architecture can significantly improve the accuracy of finding point correspondences in 3D objects, especially when used with artificial texture. 
+To enable dense correspondence, we applied artificial texture to our models. We created our own datasets consisting of five patterns and one non-textured pattern. We then used our method to perform inference on the new dataset to qualitatively show the optimisation. Finally, we evaluated our results both quantitatively and qualitatively, to show the improvement in performance when we applied textures. Our work shows that deep learning methods like SurfEmb's architecture can significantly improve the accuracy of finding point correspondences in 3D objects, especially when used with artificial texture. 
 
 ## Install requirements
 
@@ -29,7 +29,7 @@ $ conda activate surfbase
 <img src="/src/texture3.png" alt="Texture 3" width="150" /> <img src="/src/texture4.png" alt="Texture 4" width="150" /> <img src="/src/texture5.png" alt="Texture 15" width="150" /> 
 </p>
 
-Here's a list of download links for each pattern: 
+Here's a list of download links for the patterns displayed above, in the order shown:
 
 [Pattern 1](https://drive.google.com/file/d/1qyEU6JLRu_F-yJenvICj-Dw6m439BoBl/view?usp=share_link),
 [Pattern 2](https://drive.google.com/file/d/1O6M3pn_LnLwZcPaBHkRI5bgTNc2azQYi/view?usp=share_link),
