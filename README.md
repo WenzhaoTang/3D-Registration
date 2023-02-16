@@ -29,7 +29,16 @@ $ conda activate surfbase
 <img src="/src/texture3.png" alt="Texture 3" width="150" /> <img src="/src/texture4.png" alt="Texture 4" width="150" /> <img src="/src/texture5.png" alt="Texture 15" width="150" /> 
 </p>
 
-Our datasets can be downloaded through the following link in accordance with the BOP's format: [Niubility](https://bop.felk.cvut.cz/datasets/).
+Here's a list of download links for each pattern: 
+
+[Pattern 1](https://drive.google.com/file/d/1qyEU6JLRu_F-yJenvICj-Dw6m439BoBl/view?usp=share_link),
+[Pattern 2](https://drive.google.com/file/d/1O6M3pn_LnLwZcPaBHkRI5bgTNc2azQYi/view?usp=share_link),
+[Pattern 3](https://drive.google.com/file/d/1t9XxAhy8RqP2EGjwcgXHQjHRAtFRnQEW/view?usp=share_link),
+[Pattern 4](https://drive.google.com/file/d/16mltzm_U-t9DVue9Cy9bs7rna-gYOZi5/view?usp=share_link),
+[Pattern 5](https://drive.google.com/file/d/1Y7Pxujt-MMd5WUqK632Ief3CFP_r3HIy/view?usp=share_link),
+[No Texture](https://drive.google.com/file/d/1Qj-3BxYzInYxK1JtLhvgzssxfRZWi-l2/view?usp=share_link)
+
+Original datasets can be downloaded through the following link in accordance with the BOP's format: [Original Bop](https://bop.felk.cvut.cz/datasets/).
 
 Extract the datasets under ```data/bop``` (or make a symbolic link).
 
