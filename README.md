@@ -49,6 +49,7 @@ The following images display the rendered objects with applied and selected patt
 To observe differences, train a model using varying numbers of epochs.
 Configure the following settings in the training script:
 ```shell
+import wandb
 wandb.log({'epoch': num})
 ```
 
@@ -72,7 +73,7 @@ $ python -m surfemb.scripts.train [dataset] --gpus [gpu ids]
 For example, to train a model on *T-LESS-Nonetextured* on *cuda:0*
 
 ```shell
-$ python -m surfemb.scripts.train tless --gpus 0
+$ python -m surfemb.scripts.train tlessnonetextured --gpus 0
 ```
 
 ## Inference data
@@ -142,6 +143,9 @@ Add ```--real``` to use the test images with simulated crops based on the ground
 add ```--detections``` to use the CosyPose detections.
 
 ## Inference for BOP evaluation
+
+### Notice
+If you would like to create your own inference data, please adjust the bop_challenge file accordingly for inference/evaluation purposes.
 
 Inference is run on the (real) test images with CosyPose detections:
 
