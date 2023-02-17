@@ -172,5 +172,5 @@ the [BOP toolkit](https://github.com/thodan/bop_toolkit).
 ## Extra
 
 Custom dataset:
-Format the dataset as a BOP dataset and put it in *data/bop*.# 3D-Registration
+Format the dataset as a BOP dataset and put it in *data/bop*.
 # 3D-Registration
