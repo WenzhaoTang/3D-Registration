@@ -28,3 +28,29 @@ As a base of our dataset we were using the [T-Less](http://cmp.felk.cvut.cz/t-le
 To get started with BlenderProc we highly recommend to read their README, it provides all necessary information in a very short fashion.
 It also includes certain scripts to output the data in the BOP format which we were using, so only little needed to be modified there. 
 Within their repository: `examples/datasets/bop_object_on_surface_sampling` was used as a base script for our use case. The final version can be found [here](./2-blenderproc/generate_dataset.py)
+
+### BlenderProc Instructions
+
+Specifically for the bop script we used, we recommend to read the instruction of the respective base of that script --> [here](https://github.com/DLR-RM/BlenderProc/tree/main/examples/datasets/bop_object_on_surface_sampling)
+
+#### Install
+
+```bash
+pip install blenderproc
+blenderproc download cc_textures resources
+```
+
+#### Usage
+General usage as follows:
+
+```bash
+belnderproc run python_script.py
+```
+
+Concrete usage of our script
+```bash
+blenderproc run generate_dataset.py ./path/to/data/[dataset_name] dataset_name resources/ output/path object_id pattern_id
+```
+
+To generate the final dataset on the cluster we used a separate run script that generated `5000` images per object and per pattern, i.e. each object + pattern combination is rendered in 25 different scenes. With our 6 patterns (5 + 1 withot textures) and 3 objects this results in a dataset with a total of `90,000` images.
+The run script is included [here](./2-blenderproc/run.sh).
