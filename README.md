@@ -1,4 +1,4 @@
-# Praktikum on 3D Vision - 3D Registration
+# 3D Registration (Semester project at TUM)
 
 ## Project's overview
 Our project is focused on the task of finding point correspondences of rigid 3D objects to a canonical model. To achieve this goal, we conducted a thorough review of related work in the field and explored various possibilities. We experimented with template matching, but found its disadvantages when compared to deep learning methods. After careful consideration, we chose SurfEmb's architecture to perform our task.
